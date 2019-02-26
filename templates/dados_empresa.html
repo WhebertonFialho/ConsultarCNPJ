@@ -1,0 +1,74 @@
+{%- extends "base.html" %}
+{% import "bootstrap/utils.html" as utils %}
+{% block content %}
+    <div class="container">
+        <div class="jumbotron">
+			<table class="table table-striped">
+			  <tbody>
+				<tr>
+					<td>CNPJ</td>
+					<td>{{ data['cnpj'] }}</td>
+				</tr>
+				<tr>
+					<td>Nome Fantasia</td>
+					<td>{{ data['fantasia'] }}</td>
+				</tr>
+				<tr>
+					<td>Razão Social</td>
+					<td>{{ data['nome'] }}</td>
+				</tr>
+				<tr>
+					<td>Telefone</td>
+					<td>{{ data['telefone'] }}</td>
+				</tr>
+				<tr>
+					<td>Email</td>
+					<td>{{ data['email'] }}</td>
+				</tr>
+				<tr>
+					<td>Endereco</td>
+					<td>{{ data['logradouro'] }}</td>
+				</tr>
+				<tr>
+					<td>Numero</td>
+					<td>{{ data['numero'] }}</td>
+				</tr>
+				<tr>
+					<td>CEP</td>
+					<td>{{ data['cep'] }}</td>
+				</tr>
+				<tr>
+					<td>Cidade</td>
+					<td>{{ data['municipio'] }}</td>
+				</tr>
+				<tr>
+					<td>Estado</td>
+					<td>{{ data['uf'] }}</td>
+				</tr>
+				<tr>
+					<td>Estado</td>
+					<td>{{ data['uf'] }}</td>
+				</tr>
+				<tr>
+					<td>CNAE Principal</td>
+					<td>
+						{% for cnae_principal in data['atividade_principal'] %}
+							{{ cnae_principal.code }} - {{ cnae_principal.text }}<br>
+						{% endfor %}
+					</td>
+				<tr>
+					<td>CNAE Principal</td>
+					<td>
+						{% for cnae_secundaria in data['atividades_secundarias'] %}
+							{{ cnae_secundaria.code }} - {{ cnae_secundaria.text }}<br>
+						{% endfor %}
+					</td>
+				</tr>
+			  </tbody>
+			</table>
+			<div class="pull-right">
+				<a class="btn btn-danger" type=submit href="{{ url_for('index') }}">Voltar</a>
+			</div>
+        </div>
+    </div>
+{%- endblock %}

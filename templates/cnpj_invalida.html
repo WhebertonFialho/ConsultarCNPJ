@@ -1,0 +1,13 @@
+{%- extends "base.html" %}
+{% import "bootstrap/utils.html" as utils %}
+{% block content %}
+    <div class="container">
+        <div class="jumbotron">
+			<h2>CNPJ Invalida</h2>
+			<p>Tente Novamente</p>
+			<div class="pull-right">
+				<a class="btn btn-danger" type=submit href="{{ url_for('index') }}">Voltar</a>
+			</div>
+        </div>
+    </div>
+{%- endblock %}
