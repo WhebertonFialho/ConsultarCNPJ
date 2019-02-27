@@ -23,4 +23,4 @@ def cnpj_invalida():
 	
 if __name__ == '__main__':
 	Bootstrap(app)
-	app.run()
+	app.run(debug=True)
