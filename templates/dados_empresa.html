@@ -69,6 +69,14 @@
 						{% endfor %}
 					</td>
 				</tr>
+				<tr>
+					<td>Quadro Social</td>
+					<td>
+						{% for quadro_social in data['qsa'] %}
+							{{ quadro_social.nome }} ({{ quadro_social.qual }})<br>
+						{% endfor %}
+					</td>
+				</tr>
 			  </tbody>
 			</table>
 			<div class="pull-right">
