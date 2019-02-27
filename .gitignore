@@ -134,4 +134,5 @@ dmypy.json
 # Ignore all local history of files
 .history
 
+*.bat
 # End of https://www.gitignore.io/api/python,visualstudiocode
