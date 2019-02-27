@@ -1,6 +1,9 @@
 gunicorn==19.9.0
 Flask==0.12.3
-Flask-Bootstrap==3.3.7.1
+flask-bootstrap
+flask-nav
+flask-debug
+flask-wtf
 requests==2.21.0
 Jinja2==2.10
 Werkzeug==0.14.1
