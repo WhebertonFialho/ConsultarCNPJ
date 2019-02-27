@@ -9,6 +9,7 @@ deprecation==2.0.6
 dominate==2.3.5
 Flask==1.0.2
 Flask-Bootstrap==3.3.7.1
+gunicorn==19.9.0
 idna==2.8
 isodate==0.6.0
 itsdangerous==1.1.0
