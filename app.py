@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, request, render_template
 from flask_bootstrap import Bootstrap
 from API import ConsultaCNPJ
+import os
 
 app = Flask(__name__, template_folder='templates')
 
