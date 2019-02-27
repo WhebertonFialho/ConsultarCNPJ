@@ -1,8 +1,8 @@
 Pequena aplicação desenvonvida com: 
-    Python
-    Flask
-    JQuery
+Python + Flask + Flask-Bootstrap + JQuery
 
-Aplicação disponivel no link 
+Utilizando a API: https://www.receitaws.com.br/
+
+Aplicação disponivel no link : https://buscar-cnpj.herokuapp.com/
 
 Para executar local so executar "python3 app.py" e no browser "localhost:5000"
