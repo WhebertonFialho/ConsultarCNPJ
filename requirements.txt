@@ -4,6 +4,6 @@ flask-bootstrap
 flask-nav
 flask-debug
 flask-wtf
-requests==2.21.0
-Jinja2==2.10
+requests
+Jinja2
 Werkzeug==0.14.1
