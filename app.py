@@ -4,6 +4,7 @@ from API import ConsultaCNPJ
 import os
 
 app = Flask(__name__, template_folder='templates')
+bootstrap = Bootstrap(app)
 
 @app.route('/')
 @app.route('/index')
@@ -23,6 +24,6 @@ def cnpj_invalida():
 	return render_template('cnpj_invalida.html')
 	
 if __name__ == '__main__':
-	Bootstrap(app)
+	#Bootstrap(app)
 	port = int(os.environ.get("PORT", 5000))
 	app.run(host="0.0.0.0", port=port, debug=True)
