@@ -1,9 +1,12 @@
+click==6.7
 gunicorn==19.9.0
 Flask==0.12.3
 flask-bootstrap
 flask-nav
 flask-debug
 flask-wtf
-requests
+itsdangerous==0.24
 Jinja2
+MarkupSafe==1.0
+requests
 Werkzeug==0.14.1

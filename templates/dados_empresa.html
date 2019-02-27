@@ -34,17 +34,22 @@
 					<td>{{ data['numero'] }}</td>
 				</tr>
 				<tr>
+					<td>Complemento</td>
+					<td>{{ data['complemento'] }}</td>
+				</tr>
+				<tr>
 					<td>CEP</td>
 					<td>{{ data['cep'] }}</td>
+				</tr>
+				<tr>
+					<td>Bairro</td>
+					<td>{{ data['bairro'] }}</td>
 				</tr>
 				<tr>
 					<td>Cidade</td>
 					<td>{{ data['municipio'] }}</td>
 				</tr>
-				<tr>
-					<td>Estado</td>
-					<td>{{ data['uf'] }}</td>
-				</tr>
+				
 				<tr>
 					<td>Estado</td>
 					<td>{{ data['uf'] }}</td>
@@ -57,7 +62,7 @@
 						{% endfor %}
 					</td>
 				<tr>
-					<td>CNAE Principal</td>
+					<td>CNAE Secundaria</td>
 					<td>
 						{% for cnae_secundaria in data['atividades_secundarias'] %}
 							{{ cnae_secundaria.code }} - {{ cnae_secundaria.text }}<br>
